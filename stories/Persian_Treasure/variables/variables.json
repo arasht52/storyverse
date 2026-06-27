@@ -1,0 +1,316 @@
+{
+  "variables": [
+    {
+      "id": "var_money",
+      "category": "Resource",
+      "type": "number",
+      "initialValue": 400,
+      "min": 0,
+      "max": 100000,
+      "label": "Money"
+    },
+    {
+      "id": "var_debt_pressure",
+      "category": "Resource",
+      "type": "number",
+      "initialValue": 70,
+      "min": 0,
+      "max": 100,
+      "label": "Debt Pressure"
+    },
+    {
+      "id": "var_premium_currency",
+      "category": "Resource",
+      "type": "number",
+      "initialValue": 0,
+      "min": 0,
+      "max": 100000,
+      "label": "Premium Currency"
+    },
+    {
+      "id": "var_health",
+      "category": "Vitality",
+      "type": "number",
+      "initialValue": 85,
+      "min": 0,
+      "max": 100,
+      "label": "Health"
+    },
+    {
+      "id": "var_stress",
+      "category": "Vitality",
+      "type": "number",
+      "initialValue": 35,
+      "min": 0,
+      "max": 100,
+      "label": "Stress"
+    },
+    {
+      "id": "var_fatigue",
+      "category": "Vitality",
+      "type": "number",
+      "initialValue": 20,
+      "min": 0,
+      "max": 100,
+      "label": "Fatigue"
+    },
+    {
+      "id": "var_vision_doubt",
+      "category": "Vitality",
+      "type": "number",
+      "initialValue": 50,
+      "min": 0,
+      "max": 100,
+      "label": "Vision Doubt"
+    },
+    {
+      "id": "var_historical_knowledge",
+      "category": "Knowledge",
+      "type": "number",
+      "initialValue": 5,
+      "min": 0,
+      "max": 100,
+      "label": "Historical Knowledge"
+    },
+    {
+      "id": "var_map_knowledge",
+      "category": "Knowledge",
+      "type": "number",
+      "initialValue": 10,
+      "min": 0,
+      "max": 100,
+      "label": "Map Knowledge"
+    },
+    {
+      "id": "var_evidence_progress",
+      "category": "Knowledge",
+      "type": "number",
+      "initialValue": 0,
+      "min": 0,
+      "max": 100,
+      "label": "Evidence Progress"
+    },
+    {
+      "id": "var_engineering_assessment",
+      "category": "Knowledge",
+      "type": "number",
+      "initialValue": 15,
+      "min": 0,
+      "max": 100,
+      "label": "Engineering Assessment"
+    },
+    {
+      "id": "var_vision_intensity",
+      "category": "Knowledge",
+      "type": "number",
+      "initialValue": 0,
+      "min": 0,
+      "max": 100,
+      "label": "Vision Intensity"
+    },
+    {
+      "id": "var_excavation_progress",
+      "category": "Progress",
+      "type": "number",
+      "initialValue": 0,
+      "min": 0,
+      "max": 100,
+      "label": "Excavation Progress"
+    },
+    {
+      "id": "var_current_chapter",
+      "category": "Progress",
+      "type": "enum",
+      "initialValue": "chapter_01",
+      "enumValues": ["chapter_01", "chapter_02", "chapter_03", "chapter_04"],
+      "label": "Current Chapter"
+    },
+    {
+      "id": "var_reputation",
+      "category": "Social",
+      "type": "number",
+      "initialValue": 40,
+      "min": 0,
+      "max": 100,
+      "label": "Professional Reputation"
+    },
+    {
+      "id": "var_legal_risk",
+      "category": "Social",
+      "type": "number",
+      "initialValue": 10,
+      "min": 0,
+      "max": 100,
+      "label": "Legal Risk"
+    },
+    {
+      "id": "var_heritage_authority_attention",
+      "category": "Social",
+      "type": "number",
+      "initialValue": 0,
+      "min": 0,
+      "max": 100,
+      "label": "Heritage Authority Attention"
+    },
+    {
+      "id": "var_industrial_access",
+      "category": "Social",
+      "type": "number",
+      "initialValue": 20,
+      "min": 0,
+      "max": 100,
+      "label": "Industrial Access"
+    },
+    {
+      "id": "var_black_market_exposure",
+      "category": "Social",
+      "type": "number",
+      "initialValue": 0,
+      "min": 0,
+      "max": 100,
+      "label": "Black Market Exposure"
+    },
+    {
+      "id": "var_days_remaining",
+      "category": "Time",
+      "type": "number",
+      "initialValue": 30,
+      "min": 0,
+      "max": 365,
+      "label": "Days Remaining Until Funding Deadline"
+    },
+    {
+      "id": "var_current_day",
+      "category": "Time",
+      "type": "number",
+      "initialValue": 1,
+      "min": 1,
+      "max": 365,
+      "label": "Current Day"
+    },
+    {
+      "id": "var_has_survey_equipment",
+      "category": "Inventory",
+      "type": "boolean",
+      "initialValue": true,
+      "label": "Has Survey Equipment"
+    },
+    {
+      "id": "var_has_field_journal",
+      "category": "Inventory",
+      "type": "boolean",
+      "initialValue": true,
+      "label": "Has Field Journal"
+    },
+    {
+      "id": "var_has_artifact_sample",
+      "category": "Inventory",
+      "type": "boolean",
+      "initialValue": false,
+      "label": "Has Artifact Sample"
+    },
+    {
+      "id": "var_trust_mother",
+      "category": "Relationship",
+      "type": "number",
+      "initialValue": 30,
+      "min": 0,
+      "max": 100,
+      "label": "Trust with Mother"
+    },
+    {
+      "id": "var_trust_father",
+      "category": "Relationship",
+      "type": "number",
+      "initialValue": 20,
+      "min": 0,
+      "max": 100,
+      "label": "Trust with Father"
+    },
+    {
+      "id": "var_trust_local_guide",
+      "category": "Relationship",
+      "type": "number",
+      "initialValue": 25,
+      "min": 0,
+      "max": 100,
+      "label": "Trust with Local Guide"
+    },
+    {
+      "id": "var_trust_archaeologist",
+      "category": "Relationship",
+      "type": "number",
+      "initialValue": 10,
+      "min": 0,
+      "max": 100,
+      "label": "Trust with Archaeologist"
+    },
+    {
+      "id": "var_trust_crow",
+      "category": "Relationship",
+      "type": "number",
+      "initialValue": 0,
+      "min": 0,
+      "max": 100,
+      "label": "Trust with The Crow"
+    },
+    {
+      "id": "var_trust_heritage_officer",
+      "category": "Relationship",
+      "type": "number",
+      "initialValue": 15,
+      "min": 0,
+      "max": 100,
+      "label": "Trust with Heritage Protection Officer"
+    },
+    {
+      "id": "flag_excavation_unauthorized_known",
+      "category": "StateFlag",
+      "type": "boolean",
+      "initialValue": true,
+      "label": "Daniel Knows the Excavation Is Unauthorized"
+    },
+    {
+      "id": "flag_met_local_guide",
+      "category": "StateFlag",
+      "type": "boolean",
+      "initialValue": false,
+      "label": "Has Met Local Guide"
+    },
+    {
+      "id": "flag_met_archaeologist",
+      "category": "StateFlag",
+      "type": "boolean",
+      "initialValue": false,
+      "label": "Has Met Archaeologist"
+    },
+    {
+      "id": "flag_met_crow",
+      "category": "StateFlag",
+      "type": "boolean",
+      "initialValue": false,
+      "label": "Has Met The Crow"
+    },
+    {
+      "id": "flag_family_history_hinted",
+      "category": "StateFlag",
+      "type": "boolean",
+      "initialValue": false,
+      "label": "Family History Has Been Hinted At"
+    },
+    {
+      "id": "flag_family_history_revealed",
+      "category": "StateFlag",
+      "type": "boolean",
+      "initialValue": false,
+      "label": "Family History Has Been Revealed"
+    },
+    {
+      "id": "flag_first_vision_experienced",
+      "category": "StateFlag",
+      "type": "boolean",
+      "initialValue": false,
+      "label": "Daniel Has Experienced His First Vision"
+    }
+  ]
+}
