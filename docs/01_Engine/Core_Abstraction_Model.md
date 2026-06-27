@@ -1,6 +1,7 @@
 StoryVerse — Core Abstraction Model
 
-Status: LOCKED
+Status: DRAFT
+Version: 0.1
 Owner: Executive Producer / System Architect
 
 ⸻
